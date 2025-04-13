@@ -67,5 +67,8 @@ public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
+	/**Teleporting Bool */
+	UPROPERTY(EditAnywhere)
+	bool isTeleporting;
 };
 
