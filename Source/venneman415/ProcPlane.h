@@ -29,6 +29,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	// Creates properties for vertices, triangles, UV0, and PlaneMat
 	UPROPERTY(EditAnywhere)
 	TArray<FVector> Vertices;
 
@@ -41,6 +42,7 @@ public:
 	UPROPERTY(EditAnywhere)
 	UMaterialInterface* PlaneMat;
 
+	// Function to create mesh
 	UFUNCTION()
 	void CreateMesh();
 

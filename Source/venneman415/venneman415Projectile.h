@@ -23,21 +23,27 @@ class Avenneman415Projectile : public AActor
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
 	UProjectileMovementComponent* ProjectileMovement;
 
+	/** Mesh component */
 	UPROPERTY(EditAnywhere)
 	UStaticMeshComponent* ballMesh;
 
+	/** Base material */
 	UPROPERTY(EditAnywhere)
 	UMaterial* baseMat;
 
+	/** Randomized color */
 	UPROPERTY()
 	FLinearColor randColor;
 
+	/** Projectile material */
 	UPROPERTY(EditAnywhere)
 	UMaterialInterface* projMat;
 
+	/** Dynamic material instance */
 	UPROPERTY()
 	UMaterialInstanceDynamic* dmiMat;
-
+	
+	/** Randomzied color for niagara system */
 	UPROPERTY(EditAnywhere)
 	UNiagaraSystem* colorP;
 

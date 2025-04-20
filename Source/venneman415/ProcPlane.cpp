@@ -25,6 +25,7 @@ void AProcPlane::PostActorCreated()
 	CreateMesh();
 	if (PlaneMat)
 	{
+		// Set procMesh material to PlaneMat
 		procMesh->SetMaterial(0, PlaneMat);
 	}
 }
@@ -35,6 +36,7 @@ void AProcPlane::PostLoad()
 	CreateMesh();
 	if (PlaneMat)
 	{
+		// Set procMesh material to PlaneMat
 		procMesh->SetMaterial(0, PlaneMat);
 	}
 }
@@ -48,6 +50,7 @@ void AProcPlane::Tick(float DeltaTime)
 
 void AProcPlane::CreateMesh()
 {
+	// Create mesh using parameters
 	procMesh->CreateMeshSection(0, Vertices, Triangles, TArray<FVector>(), UV0, TArray<FColor>(), TArray<FProcMeshTangent>(), true);
 }
 

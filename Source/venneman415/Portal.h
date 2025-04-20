@@ -50,12 +50,15 @@ public:
 	UPROPERTY(EditAnywhere)
 	UMaterialInterface* mat;
 
+	// Create function for when player overlaps portal
 	UFUNCTION()
 	void OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
+	// Create function to set booleon
 	UFUNCTION()
 	void SetBool(Avenneman415Character* playerChar);
 
+	// Create function to update portals
 	UFUNCTION()
 	void UpdatePortals();
 
